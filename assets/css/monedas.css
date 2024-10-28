@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  border-top: solid gray;
+  border-bottom: solid gray;
+  text-align: center;
+  margin-top: 10px;
+}
+h1 {
+  font-size: 50px;
+}
+.conversor {
+  background-color: gray;
+  height: 400px;
+  width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+i {
+  margin-top: 50px;
+}
+#monedasInput,
+#moneda {
+  padding-inline: 40px;
+  padding-block: 10px;
+}
+.aConvertir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  padding-block: 10px;
+  padding-inline: 50px;
+  background-color: rgb(86, 168, 234);
+  color: white;
+  margin-top: 30px;
+}
+.contenedorGrafico {
+  display: none;
+  justify-content: center;
+  width: auto;
+  height: 300px;
+  margin-block: 20px;
+  background-color: azure;
+}

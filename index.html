@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba de Javascript WEB</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a6a387f34a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/monedas.css" />
+  </head>
+  <body>
+    <h1>Conversor de Monedas Nacional</h1>
+    <span id="error"></span>
+
+    <div class="conversor">
+      <div><h2>Pesos CLP</h2></div>
+      <div>
+        <input type="text" id="monedasInput" />
+      </div>
+      <div class="aConvertir">
+        <h3>Moneda a convertir:</h3>
+        <select id="moneda">
+          <option value="usd">Dólar (USD)</option>
+          <option value="eur">Euro (EUR)</option>
+          <option value="clp">Peso Chileno (CLP)</option>
+        </select>
+      </div>
+      <button onclick="convertirMoneda()">Buscar</button>
+      <i class="fa-solid fa-ellipsis fa-2x" style="color: #ffffff"></i>
+      <div id="resultado"></div>
+    </div>
+    <div class="contenedorGrafico">
+      <canvas id="grafico"></canvas>
+    </div>
+    <script src="./assets/js/monedas.js"></script>
+  </body>
+</html>
